@@ -37,7 +37,7 @@
         </q-carousel-slide>
       </q-carousel>
     </div>
-    <div class="textbox">
+    <div class="textbox" id="test">
       <q-card class="my-card bg-primary text-white">
         <q-card-section>
           <div class="text-h6">Our Changing Planet</div>

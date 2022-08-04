@@ -11,15 +11,26 @@
           @click="toggleLeftDrawer"
         />
 
-        <q-toolbar-title class="text-secondary"> Echelon </q-toolbar-title>
+        <q-toolbar-title
+          class="text-secondary"
+          style="font-family: 'MachineStd'; font-size: 45px"
+        >
+          Echelon
+        </q-toolbar-title>
 
-        <div>Foxhole's Finest Colonials</div>
+        <div class="secondary_text">Foxhole's Finest Colonials</div>
       </q-toolbar>
     </q-header>
 
-    <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
+    <q-drawer
+      v-model="leftDrawerOpen"
+      show-if-above
+      class="bg-primary text-secondary"
+    >
       <q-list>
-        <q-item-label header> Essential Links </q-item-label>
+        <q-item-label header class="text-secondary secondary_text">
+          Essential Links
+        </q-item-label>
 
         <EssentialLink
           v-for="link in essentialLinks"
@@ -36,12 +47,15 @@
 </template>
 
 <style>
-body{
-  background: url('../assets/background.png') no-repeat center center fixed;
+body {
+  background: url("../assets/background.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+.secondary_text {
+  font-family: monospace;
 }
 </style>
 
@@ -51,10 +65,10 @@ import EssentialLink from "components/EssentialLink.vue";
 
 const linksList = [
   {
-    title: "Docs",
-    caption: "quasar.dev",
-    icon: "school",
-    link: "https://quasar.dev",
+    title: "Discord",
+    caption: "Join today!",
+    icon: "record_voice_over",
+    link: "https://discord.com/invite/xy6zBQy",
   },
   {
     title: "Github",
@@ -67,12 +81,6 @@ const linksList = [
     caption: "chat.quasar.dev",
     icon: "chat",
     link: "https://chat.quasar.dev",
-  },
-  {
-    title: "Forum",
-    caption: "forum.quasar.dev",
-    icon: "record_voice_over",
-    link: "https://forum.quasar.dev",
   },
   {
     title: "Twitter",
