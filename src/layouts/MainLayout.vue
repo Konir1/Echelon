@@ -12,10 +12,21 @@
         />
 
         <q-toolbar-title
-          class="text-secondary"
+          class="neonText text-secondary"
           style="font-family: 'MachineStd'; font-size: 45px"
         >
-          Echelon
+          <a class="waviy" href="#/">
+            <span style="--i: 1">E</span>
+            <span style="--i: 2">C</span>
+            <span style="--i: 3">H</span>
+            <span style="--i: 4">E</span>
+            <span style="--i: 5">L</span>
+            <span style="--i: 6">O</span>
+            <span style="--i: 7">N</span>
+            <q-avatar style="margin-left: 5px">
+              <img src="../assets/ECHLogo.png" />
+            </q-avatar>
+          </a>
         </q-toolbar-title>
 
         <div class="secondary_text">Foxhole's Finest Colonials</div>
@@ -43,6 +54,13 @@
     <q-page-container>
       <router-view />
     </q-page-container>
+
+    <q-footer
+      class="bg-transparent text-white text-center mt-5"
+      style="opacity: 15%"
+    >
+      Copyright © {{ currentYear }} Echelon. All Rights Reserved
+    </q-footer>
   </q-layout>
 </template>
 
@@ -53,9 +71,39 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  height: 100%;
 }
 .secondary_text {
   font-family: monospace;
+}
+
+.waviy {
+  position: relative;
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  text-transform: uppercase;
+  animation: flip 10s infinite;
+  animation-delay: calc(0.2s * var(--i));
+}
+@keyframes flip {
+  0%,
+  80% {
+    transform: rotateY(360deg);
+  }
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
 }
 </style>
 
@@ -65,40 +113,28 @@ import EssentialLink from "components/EssentialLink.vue";
 
 const linksList = [
   {
+    title: "About",
+    caption: "If you can read this you’re overqualified.",
+    icon: "info",
+    link: "#/about",
+  },
+  {
+    title: "Joining/Rules",
+    caption: "Son we need to talk",
+    icon: "favorite",
+    link: "#/rules",
+  },
+  {
+    title: "Officer Contact",
+    caption: "Respect our authoritah!",
+    icon: "public",
+    link: "#/contact",
+  },
+  {
     title: "Discord",
     caption: "Join today!",
-    icon: "record_voice_over",
-    link: "https://discord.com/invite/xy6zBQy",
-  },
-  {
-    title: "Github",
-    caption: "github.com/quasarframework",
-    icon: "code",
-    link: "https://github.com/quasarframework",
-  },
-  {
-    title: "Discord Chat Channel",
-    caption: "chat.quasar.dev",
     icon: "chat",
-    link: "https://chat.quasar.dev",
-  },
-  {
-    title: "Twitter",
-    caption: "@quasarframework",
-    icon: "rss_feed",
-    link: "https://twitter.quasar.dev",
-  },
-  {
-    title: "Facebook",
-    caption: "@QuasarFramework",
-    icon: "public",
-    link: "https://facebook.quasar.dev",
-  },
-  {
-    title: "Quasar Awesome",
-    caption: "Community Quasar projects",
-    icon: "favorite",
-    link: "https://awesome.quasar.dev",
+    link: "https://discord.com/invite/xy6zBQy",
   },
 ];
 
@@ -118,6 +154,7 @@ export default defineComponent({
       toggleLeftDrawer() {
         leftDrawerOpen.value = !leftDrawerOpen.value;
       },
+      currentYear: new Date().getFullYear(),
     };
   },
 });

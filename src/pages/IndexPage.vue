@@ -1,16 +1,19 @@
 <template>
-  <!-- Carousel and card -->
   <carouselVue />
+
+  <QuoteSign />
 </template>
 
 <script>
 import { defineComponent, ref } from "vue";
 import carouselVue from "src/components/carousel.vue";
+import QuoteSign from "../components/quoteSign.vue";
 
 export default defineComponent({
   name: "IndexPage",
   components: {
     carouselVue,
+    QuoteSign,
   },
   setup() {
     return {
