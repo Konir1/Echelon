@@ -12,34 +12,34 @@
       @mouseenter="autoplay = false"
       @mouseleave="autoplay = true"
     >
-      <q-carousel-slide name="first" img-src="~assets/carouselPics/1.png">
+      <q-carousel-slide name="first" img-src="~assets/carouselPics/6.png">
         <div class="absolute-bottom custom-caption">
-          <div class="text-h2">First stop</div>
-          <div class="text-subtitle1">Mountains</div>
+          <div class="text-h2">Loss</div>
+          <div class="text-subtitle1">War is heck</div>
         </div>
       </q-carousel-slide>
-      <q-carousel-slide name="second" img-src="~assets/carouselPics/2.png">
+      <q-carousel-slide name="second" img-src="~assets/carouselPics/1.png">
         <div class="absolute-bottom custom-caption">
           <div class="text-h2">Second stop</div>
           <div class="text-subtitle1">Famous City</div>
         </div>
       </q-carousel-slide>
-      <q-carousel-slide name="third" img-src="~assets/carouselPics/3.png">
+      <q-carousel-slide name="third" img-src="~assets/carouselPics/4.png">
         <div class="absolute-bottom custom-caption">
           <div class="text-h2">Third stop</div>
           <div class="text-subtitle1">Famous Bridge</div>
         </div>
       </q-carousel-slide>
-      <q-carousel-slide name="fourth" img-src="~assets/carouselPics/4.png">
+      <q-carousel-slide name="fourth" img-src="~assets/carouselPics/2.png">
         <div class="absolute-bottom custom-caption">
           <div class="text-h2">Third stop</div>
           <div class="text-subtitle1">Famous Bridge</div>
         </div>
       </q-carousel-slide>
-      <q-carousel-slide name="fifth" img-src="~assets/carouselPics/5.png">
+      <q-carousel-slide name="fifth" img-src="~assets/carouselPics/3.png">
         <div class="absolute-bottom custom-caption">
-          <div class="text-h2">Third stop</div>
-          <div class="text-subtitle1">Famous Bridge</div>
+          <div class="text-h2">Second stop</div>
+          <div class="text-subtitle1">Famous City</div>
         </div>
       </q-carousel-slide>
     </q-carousel>
