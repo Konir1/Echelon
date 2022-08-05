@@ -15,7 +15,7 @@
           class="neonText text-secondary"
           style="font-family: 'MachineStd'; font-size: 45px"
         >
-          <a class="waviy" href="#/">
+          <a class="waviy" href="/">
             <span style="--i: 1">E</span>
             <span style="--i: 2">C</span>
             <span style="--i: 3">H</span>
@@ -116,19 +116,19 @@ const linksList = [
     title: "About",
     caption: "If you can read this you’re overqualified.",
     icon: "info",
-    link: "#/about",
+    link: "/about",
   },
   {
     title: "Joining/Rules",
     caption: "Son we need to talk",
     icon: "favorite",
-    link: "#/rules",
+    link: "/rules",
   },
   {
     title: "Officer Contact",
     caption: "Respect our authoritah!",
     icon: "public",
-    link: "#/contact",
+    link: "/contact",
   },
   {
     title: "Discord",
