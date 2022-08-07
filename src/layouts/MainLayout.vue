@@ -66,7 +66,7 @@
 
 <style>
 body {
-  background: url("../assets/background.png") no-repeat center center fixed;
+  background: url("../assets/background.png") center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -75,7 +75,6 @@ body {
   justify-content: center;
   align-items: center;
   overflow-x: hidden;
-  height: 100%;
 }
 .secondary_text {
   font-family: monospace;
