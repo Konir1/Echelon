@@ -53,10 +53,10 @@ const columns = [
     sortable: true,
   },
   {
-    name: "ign",
+    name: "rank",
     align: "center",
-    label: "In-game Name",
-    field: "ign",
+    label: "Rank",
+    field: "rank",
     sortable: true,
   },
   { name: "discord", label: "Discord", field: "discord", sortable: true },
@@ -64,24 +64,24 @@ const columns = [
 
 const rows = [
   {
-    name: "Coonz",
-    ign: 159,
-    discord: 6.0,
+    name: "[ECH] Connor",
+    rank: "Deputy Commandant",
+    discord: "@The B Man#0001",
   },
   {
-    name: "Bob Dolf",
-    ign: 237,
-    discord: 9.0,
+    name: "[ECH] 1nstaR4m3n#0001",
+    rank: "Ensign",
+    discord: "@1nstaR4m3n#0001",
   },
   {
-    name: "Fred",
-    ign: 262,
-    discord: 16.0,
+    name: "[ECH] Bosco",
+    rank: "Ensign",
+    discord: "Bosco#0918",
   },
   {
-    name: "Stunt",
-    ign: 305,
-    discord: 3.7,
+    name: "[ECH] Guddalicious",
+    rank: "Command Sergeant Major",
+    discord: "Guddalicious#3503",
   },
 ];
 

@@ -23,8 +23,8 @@
             <span style="--i: 5">L</span>
             <span style="--i: 6">O</span>
             <span style="--i: 7">N</span>
-            <q-avatar style="margin-left: 5px">
-              <img src="../assets/ECHLogo.png" />
+            <q-avatar style="margin-left: 15px; scale: 140%">
+              <img class="logo" src="../assets/ECHLogo.png" />
             </q-avatar>
           </a>
         </q-toolbar-title>
