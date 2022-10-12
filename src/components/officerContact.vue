@@ -69,6 +69,11 @@ const rows = [
     discord: "@The B Man#0001",
   },
   {
+    name: "[ECH] Guddalicious",
+    rank: "Command Sergeant Major",
+    discord: "Guddalicious#3503",
+  },
+  {
     name: "[ECH] 1nstaR4m3n#0001",
     rank: "Ensign",
     discord: "@1nstaR4m3n#0001",
@@ -77,11 +82,6 @@ const rows = [
     name: "[ECH] Bosco",
     rank: "Ensign",
     discord: "Bosco#0918",
-  },
-  {
-    name: "[ECH] Guddalicious",
-    rank: "Command Sergeant Major",
-    discord: "Guddalicious#3503",
   },
 ];
 
