@@ -11,10 +11,7 @@
           @click="toggleLeftDrawer"
         />
 
-        <q-toolbar-title
-          class="neonText text-secondary"
-          style="font-family: 'MachineStd'; font-size: 45px"
-        >
+        <q-toolbar-title class="neonText text-secondary spinny">
           <a class="waviy" href="/">
             <span style="--i: 1">E</span>
             <span style="--i: 2">C</span>
@@ -95,12 +92,22 @@ body {
     transform: rotateY(360deg);
   }
 }
+.spinny {
+  font-family: "MachineStd";
+  font-size: 45px;
+}
 
 a,
 a:visited,
 a:hover,
 a:active {
   color: inherit;
+}
+
+@media only screen and (max-width: 600px) {
+  .spinny {
+    display: none;
+  }
 }
 </style>
 
