@@ -1,4 +1,7 @@
 <template>
+  <div class="currentWar text-secondary text-bold">
+    {{ this.currentWar }}
+  </div>
   <div class="q-pa-md hall-of-fame">
     <q-card
       class="my-card bg-primary"
@@ -46,6 +49,14 @@
   border-radius: 5px;
   padding: 20px;
 }
+.currentWar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  font-family: "MachineStd";
+  -webkit-text-stroke: 0.8px #090c06;
+}
 @media only screen and (max-width: 600px) {
   .hall-of-fame {
     display: flex;
@@ -64,6 +75,7 @@ export default defineComponent({
   setup() {
     return {
       winners: ref(hallOfFamers.awards),
+      currentWar: ref(hallOfFamers.currentWar),
     };
   },
 });
