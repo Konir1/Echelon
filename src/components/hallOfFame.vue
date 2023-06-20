@@ -22,11 +22,7 @@
         </q-card-section>
 
         <q-card-section class="col-5 flex flex-center">
-          <q-img
-            loading="lazy"
-            class="rounded-borders"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/US_Medal_of_Honor_%28Air_Force%29.svg/460px-US_Medal_of_Honor_%28Air_Force%29.svg.png"
-          />
+          <q-img loading="lazy" class="rounded-borders" :src="medal" />
         </q-card-section>
       </q-card-section>
     </q-card>
@@ -69,6 +65,7 @@
 <script>
 import { defineComponent, ref } from "vue";
 import hallOfFamers from "../assets/awards.json";
+import medal from "../assets/medal.png";
 
 export default defineComponent({
   name: "hallOfFame",
@@ -76,6 +73,7 @@ export default defineComponent({
     return {
       winners: ref(hallOfFamers.awards),
       currentWar: ref(hallOfFamers.currentWar),
+      medal,
     };
   },
 });
