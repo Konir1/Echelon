@@ -20,6 +20,7 @@
 
         <q-card-section class="col-5 flex flex-center">
           <q-img
+            loading="lazy"
             class="rounded-borders"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/US_Medal_of_Honor_%28Air_Force%29.svg/460px-US_Medal_of_Honor_%28Air_Force%29.svg.png"
           />
