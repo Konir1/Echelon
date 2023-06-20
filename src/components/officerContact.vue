@@ -9,7 +9,7 @@
       :filter="filter"
       hide-header
       title-class="fake text-center"
-      card-class="bg-primary text-secondary text-body1"
+      card-class="bg-primary text-secondary text-body1 text-center text-bold"
     >
       <template v-slot:top-right>
         <q-input

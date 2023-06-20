@@ -1,0 +1,45 @@
+{
+  "awards": [
+    {
+      "name": "Best Killer",
+      "winner": "@Dynhx",
+      "description": "The fattest fragger of this war."
+    },
+    {
+      "name": "Best Scooper",
+      "winner": "@[ECH] Draxthr",
+      "description": "The fattest fragger of this war."
+    },
+    {
+      "name": "Best Logi",
+      "winner": "@[ECH] Draxthr",
+      "description": "The fattest fragger of this war."
+    },
+    {
+      "name": "Best Sapper",
+      "winner": "@Dynhx",
+      "description": "The fattest fragger of this war."
+    },
+    {
+      "name": "Best Engineer",
+      "winner": "@[ECH] Colts500",
+      "description": "The fattest fragger of this war."
+    },
+    {
+      "name": "Best Medic",
+      "winner": "@Dynhx",
+      "description": "The fattest fragger of this war."
+    },
+    {
+      "name": "ECH Man Bad Award",
+      "winner": "@Dynhx",
+      "description": "The fattest fragger of this war."
+    },
+    {
+      "name": "Touch Grass Award",
+      "winner": "@[ECH] Nightfire267",
+      "description": "The fattest fragger of this war."
+    }
+  ],
+  "currentWar": "WC 104"
+}

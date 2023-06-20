@@ -23,6 +23,11 @@ const routes = [
         path: "/contact",
         component: () => import("pages/officerCont.vue"),
       },
+      {
+        name: "hallOfFame",
+        path: "/hall-of-fame",
+        component: () => import("pages/hallOfFamePage.vue"),
+      },
     ],
   },
 

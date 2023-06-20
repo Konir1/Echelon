@@ -71,9 +71,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   overflow-x: hidden;
 }
 .secondary_text {
@@ -113,13 +111,13 @@ import EssentialLink from "components/EssentialLink.vue";
 const linksList = [
   {
     title: "About",
-    caption: "If you can read this you’re overqualified.",
+    caption: "If you can read this you're overqualified.",
     icon: "info",
     link: "/about",
   },
   {
     title: "Joining/Rules",
-    caption: "Son we need to talk",
+    caption: "Son, we need to talk",
     icon: "favorite",
     link: "/rules",
   },
@@ -128,6 +126,12 @@ const linksList = [
     caption: "Respect our authoritah!",
     icon: "public",
     link: "/contact",
+  },
+  {
+    title: "Hall of Fame",
+    caption: "Personal Valor",
+    icon: "military_tech",
+    link: "/hall-of-fame",
   },
   {
     title: "Discord",

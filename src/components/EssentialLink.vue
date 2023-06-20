@@ -1,5 +1,5 @@
 <template>
-  <q-item clickable tag="a" rel="noopener noreferrer" :href="link">
+  <q-item clickable tag="a" rel="noopener noreferrer" :to="link" :href="link">
     <q-item-section v-if="icon" avatar>
       <q-icon :name="icon" />
     </q-item-section>
