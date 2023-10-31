@@ -11,20 +11,25 @@ require("dotenv").config();
 
 const app = express();
 
+const allowedOriginsDev = ["http://localhost:8080"];
+const allowedOriginsProd = ["https://shielded-dusk-66247.herokuapp.com/"];
+
 if (process.env.ENV !== "prod") {
-  let corsOptions = {
-    origin: ["http://localhost:8080"],
-    credentials: true,
-    optionsSuccessStatus: 200,
-  };
-  app.use(cors(corsOptions));
+  app.use(
+    cors({
+      origin: allowedOriginsDev,
+      credentials: true,
+      optionsSuccessStatus: 200,
+    })
+  );
 } else {
-  let corsOptions = {
-    origin: ["https://shielded-dusk-66247.herokuapp.com/"],
-    credentials: true,
-    optionsSuccessStatus: 200,
-  };
-  app.use(cors(corsOptions));
+  app.use(
+    cors({
+      origin: allowedOriginsProd,
+      credentials: true,
+      optionsSuccessStatus: 200,
+    })
+  );
 }
 
 app.use(compression());
