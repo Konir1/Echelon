@@ -6,6 +6,7 @@
   "author": "Chase Murtaugh <Chasemurtaugh@gmail.com>",
   "private": true,
   "scripts": {
+    "dev": "quasar dev",
     "lint": "eslint --ext .js,.vue ./",
     "format": "prettier --write \"**/*.{js,vue,scss,html,md,json}\" --ignore-path .gitignore",
     "test": "echo \"No test specified\" && exit 0",
@@ -52,7 +53,8 @@
     "last 5 Opera versions"
   ],
   "engines": {
-    "node": ">= 12.22.1",
-    "npm": ">= 6.13.4"
+    "node": "18.17.0",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
   }
 }
