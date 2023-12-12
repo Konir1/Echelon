@@ -28,6 +28,11 @@ const routes = [
         path: "/hall-of-fame",
         component: () => import("pages/hallOfFamePage.vue"),
       },
+      {
+        name: "ranks",
+        path: "/ranks",
+        component: () => import("pages/ranks.vue"),
+      },
     ],
   },
 

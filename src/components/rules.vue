@@ -1,8 +1,12 @@
 <template>
-  <div class="q-pa-md q-gutter-sm">
-    <q-img src="../assets/EHCMAN.png" spinner-color="white" class="logo" />
+  <div class="q-pa-md q-gutter-sm flex flex-center">
+    <q-img
+      src="../assets/EHCMAN.png"
+      spinner-color="white"
+      class="logo q-ma-md"
+    />
   </div>
-  <div class="q-pa-md bg-primary text-center fixed-center rules">
+  <div class="q-pa-md q-ma-md bg-primary text-center fixed-center rules">
     <q-item-label
       style="
         margin-bottom: 10px;
@@ -68,23 +72,23 @@
   display: block;
 }
 .logo {
-  height: 250px;
-  max-width: 250px;
+  height: 225px;
+  max-width: 225px;
+  margin-top: 250px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  position: absolute;
 }
 
 @media only screen and (max-width: 600px) {
   .logo {
-    height: 170px;
-    max-width: 170px;
+    height: 160px;
+    max-width: 160px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 165px;
   }
   .rules {
-    width: 100%;
+    width: 90%;
+    margin: auto;
   }
 }
 </style>

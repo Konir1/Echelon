@@ -1,7 +1,7 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
-      <q-toolbar>
+    <q-header class="z-top" elevated>
+      <q-toolbar show-if-above>
         <q-btn
           flat
           dense
@@ -31,11 +31,11 @@
     </q-header>
 
     <q-drawer
+      overlay
       v-model="leftDrawerOpen"
-      show-if-above
       class="bg-primary text-secondary"
     >
-      <q-list>
+      <q-list class="drawer-links">
         <q-item-label header class="text-secondary secondary_text">
           Essential Links
         </q-item-label>
@@ -77,6 +77,10 @@ body {
 
 .waviy {
   position: relative;
+}
+
+.drawer-links {
+  margin-top: 60px;
 }
 .waviy span {
   position: relative;
@@ -133,6 +137,12 @@ const linksList = [
     caption: "Respect our authoritah!",
     icon: "public",
     link: "/contact",
+  },
+  {
+    title: "Ranks",
+    caption: "The Echelon Hierarchy",
+    icon: "hotel_class",
+    link: "/ranks",
   },
   {
     title: "Hall of Fame",
