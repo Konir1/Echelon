@@ -263,8 +263,23 @@ import { defineComponent, ref } from "vue";
 
 export default defineComponent({
   name: "rank-tables",
+  async created() {
+    if (window.location.href.includes("localhost")) {
+      this.baseUrl = "http://localhost:5000";
+    } else {
+      this.baseUrl = window.location.origin;
+    }
+
+    const test = await this.$axios.get(this.baseUrl + "/medals/test");
+
+    console.log(test);
+
+    return {};
+  },
+
   data() {
     return {
+      baseUrl: "",
       columns: [
         {
           name: "rank_name",

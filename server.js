@@ -39,6 +39,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(serveStatic(__dirname + "/dist/spa"));
 
+//routing stuff
+
+const medalRoutes = require("./server/api/medals");
+app.use("/medals", medalRoutes);
+
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });
