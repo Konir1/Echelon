@@ -64,24 +64,24 @@ const columns = [
 
 const rows = [
   {
-    name: "[Regiment Leader] [ECH] Connor",
-    rank: "Commandant",
+    name: "[Regiment Leader] [ECH] Congor",
+    rank: "Marshal",
     discord: "@thebman",
   },
   {
+    name: " [ECH] Uphillwarrior1",
+    rank: "Deputy Marshal",
+    discord: "@uphillwarrior1",
+  },
+  {
+    name: "[ECH] Colonel Korn",
+    rank: "Lance Captain",
+    discord: "@clemenade",
+  },
+  {
     name: "[EU Contact] [ECH] 4naught",
-    rank: "Sentinel",
+    rank: "Dragoon",
     discord: "@4naught",
-  },
-  {
-    name: "[NA Contact / Logistics Officer] [ECH] 1nstaR4m3n",
-    rank: "Ensign",
-    discord: "@1nstar4m3n",
-  },
-  {
-    name: "[NA Contact] [ECH] Bosco",
-    rank: "Ensign",
-    discord: "@bosco0918",
   },
 ];
 
