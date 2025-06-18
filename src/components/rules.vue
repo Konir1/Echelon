@@ -26,7 +26,7 @@
     >
       <q-item clickable v-ripple>
         <q-item-section>
-          <q-item-label>Must be 18 years old or older</q-item-label>
+          <q-item-label>Must have a mature mindset</q-item-label>
         </q-item-section>
       </q-item>
 
@@ -58,8 +58,7 @@
       <q-item clickable v-ripple>
         <q-item-section>
           <q-item-label
-            >A brief Discord interview is required, in which a microphone is
-            needed</q-item-label
+            >You are required to fill out a brief form</q-item-label
           >
         </q-item-section>
       </q-item>
